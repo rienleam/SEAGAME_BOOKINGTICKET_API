@@ -41,8 +41,5 @@ Route::resource("bookings",BookingController::class);
 // search an event
 Route::get("/search/{keyword}",[EventController::class, "search"]);
 
-// buy a ticket
-Route::get("/booking",[BookingController::class, "booking"]);
-
 // get event's details
 Route::get("/details/{id}",[EventController::class, "getEventDetail"]);
